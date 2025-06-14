@@ -18,19 +18,19 @@
 module.exports = {
     root: true,
     parserOptions: {
-        parser: 'babel-eslint',
-        ecmaVersion: 6
+        parser: "babel-eslint",
+        ecmaVersion: 6,
     },
-    plugins: ['vue'],
+    plugins: ["vue"],
     env: {
         browser: true,
-        node: true
+        node: true,
     },
     // extends: [
     //     "standard",
     //     "plugin:vue/recommended"
     // ],
-    extends: ['plugin:vue/essential', 'standard'],
+    extends: ["plugin:vue/essential", "standard"],
     // 'extends': [
     // 'plugin:vue/strongly-recommended', // strongly-recommended
     // 'standard',
@@ -45,10 +45,9 @@ module.exports = {
     //   }
     // ],
     rules: {
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
+        "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
 
-        'no-multiple-empty-lines': 'off'
-    }
-}
-
+        "no-multiple-empty-lines": "off",
+    },
+};
